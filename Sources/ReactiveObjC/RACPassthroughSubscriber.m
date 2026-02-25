@@ -9,9 +9,9 @@
 #import "RACPassthroughSubscriber.h"
 #import "RACCompoundDisposable.h"
 #import "RACSignal.h"
-#import "RACSignalProvider.h"
 
 #if !defined(DTRACE_PROBES_DISABLED) || !DTRACE_PROBES_DISABLED
+#import "RACSignalProvider.h"
 
 static const char *cleanedDTraceString(NSString *original) {
 	return [original stringByReplacingOccurrencesOfString:@"\\s+" withString:@" " options:NSRegularExpressionSearch range:NSMakeRange(0, original.length)].UTF8String;
