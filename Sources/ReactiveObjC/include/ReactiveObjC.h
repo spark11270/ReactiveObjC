@@ -23,6 +23,7 @@ FOUNDATION_EXPORT const unsigned char ReactiveObjCVersionString[];
 #import "NSFileHandle+RACSupport.h"
 #import "NSNotificationCenter+RACSupport.h"
 #import "NSObject+RACDeallocating.h"
+#import "NSObject+RACKVOWrapper.h"
 #import "NSObject+RACLifting.h"
 #import "NSObject+RACPropertySubscribing.h"
 #import "NSObject+RACSelectorSignal.h"
