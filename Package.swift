@@ -23,17 +23,15 @@ let package = Package(
             path: "Sources/ReactiveObjC",
             exclude: [
                 "Deprecations+Removals.swift",
-                // files excluded for iOS target in podspec
-                "include/NSText+RACSignalSupport.h",
-                "include/NSObject+RACAppKitBindings.h",
-                "include/NSControl+RACCommandSupport.h",
-                "include/NSControl+RACTextSignalSupport.h",
                 "NSControl+RACCommandSupport.m",
                 "NSObject+RACAppKitBindings.m",
                 "NSText+RACSignalSupport.m",
                 "NSControl+RACTextSignalSupport.m",
             ],
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("private"),
+            ]
         ),
         .testTarget(
             name: "ReactiveObjCTests",
