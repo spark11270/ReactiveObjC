@@ -16,6 +16,8 @@ FOUNDATION_EXPORT const unsigned char ReactiveObjCVersionString[];
 
 #import "EXTKeyPathCoding.h"
 #import "EXTScope.h"
+#import "metamacros.h"
+#import "RACAnnotations.h"
 #import "NSArray+RACSequenceAdditions.h"
 #import "NSData+RACSupport.h"
 #import "NSDictionary+RACSequenceAdditions.h"
